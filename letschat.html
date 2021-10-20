@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>LetsChat - Login ✉</title>
+<link href="https://fonts.googleapis.com/css?family=Yeon+Sung&display=swap" rel="stylesheet"><meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" type="text/css" href="style.css">
+<script src="letschat.js"></script>
+</head>
+<body>
+	<center>
+		<h1 class="header">
+			<b style="margin-right: 10px;"> LetsChat </b>
+			<img src="icons8-message-64.png">
+		</h1>
+		<div class="col-lg-4 col-md-6 col-sm-6 col-xs-11 login_div">
+			<img class="logo" src="logo.png">
+			<h3 style="font-family: 'Montserrat'; padding-top:5px;">See what is happening in the world right now</h3>
+			<div class="form-group">
+				<input class="form-control" id="userNameInput" placeholder="Enter a username">
+				<h4 id="alertH4" style="display: none;"><b><code style="font-family: 'Montserrat';">Please input a username</code></b></h4>
+			</div>
+			<button style="background-color: black; color: white;" onclick="addUserName()" id="login_button" class="btn">Log in</button>
+			<br><br>
+		</div>
+		<div id="loaderDiv" class="circle"></div>
+	</center>
+</body>
+</html>
